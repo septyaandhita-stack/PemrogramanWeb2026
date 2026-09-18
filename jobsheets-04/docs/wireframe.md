@@ -31,14 +31,14 @@ Halaman yang sudah ada (Beranda, Daftar/Tambah Buku, Daftar/Tambah Anggota — J
 |              SIMPUS-Mini             |
 |--------------------------------------|
 |                                      |
-|        [ Login Petugas ]            |
+|        [ Login Petugas ]             |
 |                                      |
-|   Username : [______________]       |
-|   Password : [______________]       |
+|   Username : [______________]        |
+|   Password : [______________]        |
 |                                      |
-|          [   Masuk   ]              |
+|          [   Masuk   ]               |
 |                                      |
-|   Belum punya akun? Daftar di sini  |
+|   Belum punya akun? Daftar di sini   |
 +--------------------------------------+
 ```
 
@@ -47,12 +47,12 @@ Halaman yang sudah ada (Beranda, Daftar/Tambah Buku, Daftar/Tambah Anggota — J
 ```
 +-----------------------------------------------------+
 | SIMPUS-Mini      Beranda | Buku | Anggota | Peminjaman | (Nama Petugas) Logout |
-|-------------------------------------------------------|
+|------------------------------------------------------- |
 |  [Total Buku]   [Total Anggota]   [Sedang Dipinjam]    |
-|                                                         |
+|                                                        |
 |  Aksi Cepat:                                           |
 |  [ + Peminjaman Baru ]   [ + Pengembalian ]            |
-|                                                         |
+|                                                        |
 |  Transaksi Terbaru                                     |
 |  --------------------------------------------------    |
 |  Anggota | Buku | Tgl Pinjam | Status                  |
@@ -69,7 +69,7 @@ Halaman yang sudah ada (Beranda, Daftar/Tambah Buku, Daftar/Tambah Anggota — J
 |  Buku    : [ dropdown, hanya stok>0 ]|
 |  Tanggal Pinjam : [ auto: hari ini ] |
 |                                      |
-|          [  Simpan Peminjaman  ]    |
+|          [  Simpan Peminjaman  ]     |
 +--------------------------------------+
 ```
 
@@ -93,10 +93,39 @@ Halaman yang sudah ada (Beranda, Daftar/Tambah Buku, Daftar/Tambah Anggota — J
 |  Riwayat Peminjaman — Siti Aminah    |
 |--------------------------------------|
 |  Buku            | Pinjam   | Kembali | Status      |
-|  Laskar Pelangi   | 01/07    | 10/07   | Selesai     |
-|  Bumi Manusia      | 15/07    | -       | Dipinjam    |
+|  Laskar Pelangi   | 01/07    | 10/07   | Selesai    |
+|  Bumi Manusia      | 15/07    | -       | Dipinjam  |
 +--------------------------------------+
 ```
+
+## Wireframe: Tambah Anggota Baru
+
++-------------------------------------------------------+
+| SIMPUS-Mini                                [ Login ]  |
++-------------------------------------------------------+
+| Form Pendaftaran Anggota Baru                         |
+|                                                       |
+| NIM / NIP           : [____________________________]  |
+| Nama Lengkap        : [____________________________]  |
+| Email               : [____________________________]  |
+| Nomor Telepon/WA    : [____________________________]  |
+| Alamat              : [____________________________]  |
+|                       [____________________________]  |
+|                                                       |
+|                       [  Daftar Sekarang  ]           |
+|                                                       |
+| Sudah punya akun? <a href="login.html">Login di sini</a> |
++-------------------------------------------------------+
+
+## User flow: petugas mencari anggota baru
+
+[Petugas Login] -> [Dashboard] -> [Menu "Peminjaman / Pengembalian"]
+      -> [Filter Status: "Terlambat / Jatuh Tempo"]
+      -> [Sistem Tampilkan Daftar Anggota & Hitung Denda Otomatis]
+      -> [Petugas Pilih Transaksi]
+      -> [Terima Pembayaran Denda & Klik "Kembalikan"]
+      -> [Status "Selesai" & Stok Buku +1] -> [Kembali ke Dashboard]
+
 
 ## Konsistensi dengan Desain yang Sudah Berjalan
 - Warna aksen, tipografi navbar, dan gaya tabel/kartu mengikuti `assets/css/style.css` yang sudah dibangun sejak Jobsheet 2-3.
