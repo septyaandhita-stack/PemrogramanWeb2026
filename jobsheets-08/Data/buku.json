@@ -1,0 +1,20 @@
+[
+  {
+    "judul": "Laskar Pelangi",
+    "pengarang": "Andrea Hirata",
+    "tahun": 2005,
+    "stok": 10
+  },
+  {
+    "judul": "Bumi Manusia",
+    "pengarang": "Pramoedya Ananta Toer",
+    "tahun": 1980,
+    "stok": 5
+  },
+  {
+    "judul": "Filosofi Kopi",
+    "pengarang": "Dee Lestari",
+    "tahun": 2006,
+    "stok": 8
+  }
+]
